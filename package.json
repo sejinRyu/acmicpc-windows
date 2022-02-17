@@ -1,0 +1,19 @@
+{
+  "name": "acmicpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

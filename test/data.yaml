@@ -1,0 +1,14 @@
+- input: |
+    aa
+    aa
+  output: |
+    aa
+    aaaq
+- input: |
+    qwer
+  output: |
+    qweraq
+- input: |
+    pp
+  output: |
+    ppaq

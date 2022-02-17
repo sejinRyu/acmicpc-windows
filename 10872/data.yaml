@@ -1,0 +1,9 @@
+- input: |
+    1
+  output: |
+    36288001
+
+- input: |
+    0
+  output: |
+    1
