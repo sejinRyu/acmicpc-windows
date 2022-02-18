@@ -1,0 +1,28 @@
+#success
+- input: |
+    Mississipi
+  output: |
+    ?
+
+- input: |
+    zZa
+  output: |
+    Z
+
+- input: |
+    z
+  output: |
+    Z
+
+- input: |
+    qqqqqqqalwoaifawofjaekljfawei fjhawiuhflaiwqqqqqqqqqqqqqqqqqqqqqqqqqqq
+  output: |
+    Q
+
+
+#fail
+
+- input: |
+    baaaqqqbbb;opopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopopop
+  output: |
+    B
