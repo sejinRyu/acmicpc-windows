@@ -10,21 +10,16 @@ let count = 1;
 for(let value of data)
 {
     test("case "+count++, () => {
-        expect(value.output.removeEnter()).toEqual(runTest(value));
+        expect(value.output.trim()).toEqual(runTest(value));
     });
 }
 
 
-String.prototype.removeEnter = function() {
-    var value = this.replace(/(\n| )/g,"");
-    value = value.replace(/\r/g, "");
-    return value;
-   };
 
-function runTest(json){
-    fs.writeFileSync("/dev/stdin", json.input.removeEnter());
+function runTest(data){
+    fs.writeFileSync("/dev/stdin", data.input.trim());
 
     let run_process = child_process.spawnSync('node',[path+'/index.js']);
 
-    return run_process.stdout.toString().removeEnter();
+    return run_process.stdout.toString().trim();
 }

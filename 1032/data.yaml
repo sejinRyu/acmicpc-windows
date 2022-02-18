@@ -1,0 +1,48 @@
+#success
+- input: |
+    3
+    config.sys
+    config.inf
+    configures
+  output: |
+    config????
+
+- input: |
+    2
+    contest.txt
+    context.txt
+  output: |
+    conte?t.txt
+
+- input: |
+    3
+    c.user.mike.programs
+    c.user.nike.programs
+    c.user.rice.programs
+  output: |
+    c.user.?i?e.programs
+
+- input: |
+    4
+    a
+    a
+    b
+    b
+  output: |
+    ?
+
+- input: |
+    1
+    onlyonefile
+  output: |
+    onlyonefile
+
+
+#fail
+
+- input: |
+    2
+    onlyonefile1
+    onlyonefile2
+  output: |
+    onlyonefile
