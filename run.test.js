@@ -21,5 +21,5 @@ function runTest(data){
 
     let run_process = child_process.spawnSync('node',[path+'/index.js']);
 
-    return run_process.stdout.toString().trim();
+    return run_process.stdout.toString().trim() + run_process.stderr.toString();
 }
