@@ -2,8 +2,8 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const request = require('request');
 
-const url = 'https://www.acmicpc.net/problem/'+process.argv[2];
-const path = './'+process.argv[2];
+const url = 'https://www.acmicpc.net/problem/'+process.argv[process.argv.length-1];
+const path = './src/'+process.argv[process.argv.length-1];
 
 
 if(!fs.existsSync(path))
