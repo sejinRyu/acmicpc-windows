@@ -1,0 +1,50 @@
+- input: |
+    5457
+    3
+    6 7 8
+  output: |
+    6
+
+- input: |
+    100
+    5
+    0 1 2 3 4
+  output: |
+    0
+
+- input: |
+    500000
+    8
+    0 2 3 4 6 7 8 9
+  output: |
+    11117
+
+- input: |
+    100
+    3
+    1 0 5
+  output: |
+    0
+
+- input: |
+    14124
+    0
+  output: |
+    5
+
+- input: |
+    1
+    9
+    1 2 3 4 5 6 7 8 9
+  output: |
+    2
+
+- input: |
+    80000
+    2
+    8 9
+  output: |
+    2228
+
+
+
