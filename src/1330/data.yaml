@@ -1,0 +1,15 @@
+- input: |
+    1 2
+  output: |
+    <
+
+- input: |
+    10 2
+  output: |
+    >
+
+- input: |
+    5 5
+  output: |
+    ==
+

@@ -1,0 +1,25 @@
+- input: |
+    A*(B+C)
+  output: |
+    ABC+*
+
+- input: |
+    A+B
+  output: |
+    AB+
+
+- input: |
+    A+B*C
+  output: |
+    ABC*+
+
+- input: |
+    A+B*C-D/E
+  output: |
+    ABC*+DE/-
+
+- input: |
+    A+B+C*D
+  output: |
+    
+
