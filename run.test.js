@@ -17,9 +17,16 @@ for(let value of data)
 
 
 function runTest(data){
-    fs.writeFileSync("/dev/stdin", data.input.trim());
+    let run_process;
 
-    let run_process = child_process.spawnSync('node',[path+'/index.js']);
+    if(fs.existsSync(path+'/main.py')){
+        run_process = child_process.spawnSync('python',[path+'/main.py'],{input:data.input.trim()});
+    } else if(fs.existsSync(path+'/index.js')){
+        fs.writeFileSync("/dev/stdin", data.input.trim());
+        run_process = child_process.spawnSync('node',[path+'/index.js']);
+    }
+        
 
-    return run_process.stdout.toString().trim() + run_process.stderr.toString();
+    return run_process.stdout.toString().replaceAll('\r\n','\n').trim() + run_process.stderr.toString();
+    
 }

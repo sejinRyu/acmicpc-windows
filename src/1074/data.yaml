@@ -1,0 +1,30 @@
+- input: |
+    2 3 1
+  output: |
+    11
+
+- input: |
+    3 7 7
+  output: |
+    63
+
+- input: |
+    1 0 0
+  output: |
+    0
+
+- input: |
+    4 7 7
+  output: |
+    63
+
+- input: |
+    10 511 511
+  output: |
+    262143
+
+- input: |
+    10 512 512
+  output: |
+    786432
+
