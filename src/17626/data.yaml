@@ -1,20 +1,20 @@
 - input: |
-    A*(B+C)
+    25
   output: |
-    ABC+*
+    1
 
 - input: |
-    A+B
+    26
   output: |
-    AB+
+    2
 
 - input: |
-    A+B*C
+    11339
   output: |
-    ABC*+
+    3
 
 - input: |
-    A+B*C-D/E
+    34567
   output: |
-    ABC*+DE/-
+    4
 

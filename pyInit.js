@@ -11,7 +11,7 @@ if(!fs.existsSync(path))
 
 fs.writeFileSync(
     path+'/main.py',
-    "import sys\n");
+    "import sys\ninput = lambda : sys.stdin.readline().rstrip()\n");
 
 request(url, function(error, response, html){
     if (error) 

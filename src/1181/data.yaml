@@ -26,14 +26,3 @@
     cannot
     hesitate
 
-
-
-- input: |
-    3
-    a
-    ba
-    aba
-  output: |
-    a
-
-
