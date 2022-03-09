@@ -82,33 +82,7 @@ def getFactor(n):
     list.sort()
     return list
 
-def fourSquares(n):
-    while n & 3 == 0:
-        n >>= 2
-    return n & 7 == 7
-
-
-def threeSquares(n):
-    list = getFactor(n)
-
-    c = collections.Counter()
-    c.update(list)
-    for key, value in c.items():
-        if key & 3 == 3 and value & 1 == 1:
-            return True
-    return False
-
-def twoSquares(n):
-    return n != int(n**0.5) ** 2
-
-n = int(input())
-
-if fourSquares(n):
-    print(4)
-elif threeSquares(n):
-    print(3)
-elif twoSquares(n):
-    print(2)
-else: print(1)
+for i in getFactor(int(input())):
+    print(i)
 
  
